@@ -16,5 +16,5 @@ This is a module that enables the D&D4e Foundry system to work seamlessly with I
 
 ## Acknowledgments
 
--- [**Wasp**](https://github.com/Haxxer) for the Item Piles module and the 5e system module on which this is based
--- [**FoxLee**](https://github.com/FoxLee) for the 4e-specific settings used herein
+- [**Wasp**](https://github.com/Haxxer) for the Item Piles module and the 5e system module on which this is based
+- [**FoxLee**](https://github.com/FoxLee) for the 4e-specific settings used herein
