@@ -13,3 +13,8 @@ an easy way to split loot between players? Do you want easy to use merchants wit
 ## What is this?
 
 This is a module that enables the D&D4e Foundry system to work seamlessly with Item Piles.
+
+## Acknowledgments
+
+-- [**Wasp**](https://github.com/Haxxer) for the Item Piles module and the 5e system module on which this is based
+-- [**FoxLee**](https://github.com/FoxLee) for the 4e-specific settings used herein
