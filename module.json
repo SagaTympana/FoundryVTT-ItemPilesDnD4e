@@ -1,0 +1,40 @@
+{
+  "id": "itempilesdnd4e",
+  "title": "Item Piles: D&D 4e",
+  "description": "This module adds support for the D&D4e system within the Item Piles module",
+  "version": "1.0.0",
+  "library": "false",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "SagaTympana",
+      "url": "https://github.com/sagatympana",
+      "discord": "sagatympana"
+    }
+  ],
+  "esmodules": [
+    "dist/module.js"
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "item-piles",
+        "type": "module",
+        "manifest": "https://github.com/fantasycalendar/FoundryVTT-ItemPiles/releases/latest/download/module.json",
+        "compatibility": {
+          "minimum": "3.2.7",
+          "verified": "3.2.32"
+        }
+      }
+    ]
+  },
+  "url": "https://github.com/sagatympana/FoundryVTT-ItemPiles-DND4e",
+  "manifest": "https://github.com/sagatympana/FoundryVTT-ItemPiles-DND4e/releases/latest/download/module.json",
+  "download": "https://github.com/sagatympana/FoundryVTT-ItemPiles-DND4e/releases/latest/download/module.zip",
+  "readme": "https://github.com/sagatympana/FoundryVTT-ItemPiles-DND4e/blob/master/README.md",
+  "bugs": "https://github.com/sagatympana/FoundryVTT-ItemPiles-DND4e/issues"
+}
