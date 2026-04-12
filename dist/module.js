@@ -25,7 +25,7 @@ Hooks.once("item-piles-ready", async () => {
         "ITEM_FILTERS": [
             {
                 "path": "type",
-                "filters": "classFeats,feat,raceFeats,pathFeats,destinyFeats,ritual,power"
+                "filters": "classFeats, feat, raceFeats, pathFeats, destinyFeats, ritual, power"
             }
         ],
 
