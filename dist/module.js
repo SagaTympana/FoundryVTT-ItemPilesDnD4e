@@ -227,11 +227,11 @@ Hooks.once("item-piles-ready", async () => {
 
         "0.7.11": {
             ...baseConfig,
-            "VERSION": "1.0.0"
+            "VERSION": "0.9"
         },
         "0.8": {
             ...baseConfig,
-            "VERSION": "1.0.0",
+            "VERSION": "0.9",
             "ITEM_TYPE_HANDLERS": {
                 "backback": {
                     [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.HAS_CURRENCY]: true,
