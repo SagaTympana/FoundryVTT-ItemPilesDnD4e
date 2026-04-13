@@ -20,6 +20,17 @@
     "dist/module.js"
   ],
   "relationships": {
+    "systems": [
+      {
+        "id": "dnd4e",
+        "type": "system",
+        "manifest": "https://github.com/EndlesNights/dnd4eBeta/latest/system.json",
+        "compatibility": {
+          "minimum": "0.7",
+          "verified": "0.7.11"
+        }
+      }
+    ],
     "requires": [
       {
         "id": "item-piles",
