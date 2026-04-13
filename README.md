@@ -1,5 +1,7 @@
 # Item Piles: D&D4e
 
+![](https://img.shields.io/badge/Foundry-v13-informational) [![Report Bugs](https://img.shields.io/badge/Report%20Bugs%20on%20GitHub-2dba4e?logo=GitHub&amp;logoColor=white)](https://github.com/SagaTympana/FoundryVTT-ItemPilesDnD4e/issues)
+
 ---
 
 ## What is Item Piles?

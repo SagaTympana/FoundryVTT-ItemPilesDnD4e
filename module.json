@@ -2,7 +2,7 @@
   "id": "itempilesdnd4e",
   "title": "Item Piles: D&D 4e",
   "description": "This module adds support for the D&D4e system within the Item Piles module",
-  "version": "0.9",
+  "version": "1.0",
   "library": "false",
   "compatibility": {
     "minimum": "13",

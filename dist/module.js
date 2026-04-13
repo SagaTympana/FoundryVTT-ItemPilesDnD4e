@@ -180,38 +180,6 @@ Hooks.once("item-piles-ready", async () => {
             return itemData;
         },
 
-        "PRICE_MODIFIER_TRANSFORMER": ({
-            buyPriceModifier,
-            sellPriceModifier,
-            actor = false,
-            actorPriceModifiers = []
-        } = {}) => {
-
-            const modifiers = {
-                buyPriceModifier,
-                sellPriceModifier
-            };
-
-            if (!actor) return modifiers;
-
-            const groupModifiers = actorPriceModifiers
-                .map(data => ({ ...data, actor: fromUuidSync(data.actorUuid) }))
-                .filter(data => {
-                    return data.actor && data.actor.type === "group" && data.actor.system.members.some(member => member === actor)
-                });
-
-            modifiers.buyPriceModifier = groupModifiers.reduce((acc, data) => {
-                return data.override ? data.buyPriceModifier ?? acc : acc * data.buyPriceModifier;
-            }, buyPriceModifier);
-
-            modifiers.sellPriceModifier = groupModifiers.reduce((acc, data) => {
-                return data.override ? data.sellPriceModifier ?? acc : acc * data.sellPriceModifier;
-            }, sellPriceModifier);
-
-            return modifiers;
-
-        },
-
         "ITEM_TYPE_HANDLERS": {
             "GLOBAL": {
                 [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.IS_CONTAINED]: ({ item }) => {
@@ -227,11 +195,11 @@ Hooks.once("item-piles-ready", async () => {
 
         "0.7.11": {
             ...baseConfig,
-            "VERSION": "0.9"
+            "VERSION": "1.0"
         },
         "0.8": {
             ...baseConfig,
-            "VERSION": "0.9",
+            "VERSION": "1.0",
             "ITEM_TYPE_HANDLERS": {
                 "backback": {
                     [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.HAS_CURRENCY]: true,
