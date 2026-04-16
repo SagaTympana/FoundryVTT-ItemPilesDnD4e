@@ -25,7 +25,7 @@ Hooks.once("item-piles-ready", async () => {
         "ITEM_FILTERS": [
             {
                 "path": "type",
-                "filters": "classFeats, feat, raceFeats, pathFeats, destinyFeats, ritual, power"
+                "filters": "classFeats, destinyFeats, feat, feature, pathFeats, power, raceFeats, ritual"
             }
         ],
 
@@ -195,11 +195,11 @@ Hooks.once("item-piles-ready", async () => {
 
         "0.7.11": {
             ...baseConfig,
-            "VERSION": "1.0"
+            "VERSION": "1.0.1"
         },
         "0.8": {
             ...baseConfig,
-            "VERSION": "1.0",
+            "VERSION": "1.0.1",
             "ITEM_TYPE_HANDLERS": {
                 "backback": {
                     [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.HAS_CURRENCY]: true,
