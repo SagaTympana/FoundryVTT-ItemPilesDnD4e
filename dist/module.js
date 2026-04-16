@@ -40,6 +40,12 @@ Hooks.once("item-piles-ready", async () => {
                     "true": "✔",
                     "false": ""
                 }
+            }, {
+                label: "DND4E.Level",
+                path: "system.level",
+                formatting: "{#}",
+                buying: true,
+                selling: true
             }]
         },
 
