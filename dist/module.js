@@ -193,6 +193,17 @@ Hooks.once("item-piles-ready", async () => {
                     return itemData?.system?.container;
                 },
                 [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.IS_CONTAINED_PATH]: "system.container"
+            },
+            "backback": {
+                [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.HAS_CURRENCY]: true,
+                [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.CONTENTS]: ({ item }) => {
+                    return item.allContainedItems;
+                },
+                [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.TRANSFER]: ({ item, items, raw = false } = {}) => {
+                    for (const containedItem of item.allContainedItems) {
+                        items.push(raw ? containedItem : containedItem.toObject());
+                    }
+                }
             }
         },
     }
@@ -201,24 +212,11 @@ Hooks.once("item-piles-ready", async () => {
 
         "0.7.11": {
             ...baseConfig,
-            "VERSION": "1.0.1"
+            "VERSION": "1.0.2"
         },
         "0.8": {
             ...baseConfig,
-            "VERSION": "1.0.1",
-            "ITEM_TYPE_HANDLERS": {
-                "backback": {
-                    [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.HAS_CURRENCY]: true,
-                    [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.CONTENTS]: ({ item }) => {
-                        return item.system.contents;
-                    },
-                    [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.TRANSFER]: ({ item, items, raw = false } = {}) => {
-                        for (const containedItem of item.system.contents) {
-                            items.push(raw ? containedItem : containedItem.toObject());
-                        }
-                    }
-                }
-            }
+            "VERSION": "1.0.2",
         }
     }
 
