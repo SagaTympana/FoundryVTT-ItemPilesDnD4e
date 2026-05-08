@@ -194,7 +194,7 @@ Hooks.once("item-piles-ready", async () => {
                 },
                 [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.IS_CONTAINED_PATH]: "system.container"
             },
-            "backback": {
+            "backpack": {
                 [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.HAS_CURRENCY]: true,
                 [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.CONTENTS]: ({ item }) => {
                     return item.allContainedItems;
